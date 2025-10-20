@@ -3,27 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign Up</title>
-    <link href="style.css" rel="stylesheet">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="form-container">
-        <h2>Sign Up</h2>
-        <form>
-            <label for="username">Username:</label>
-            <input type="text" id="username" name="username" required>
+    <form action="" class="signin">
+        <fieldset>
+            <legend>Sign Up</legend>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
+            <label for="firstname">First Name: </label>
+            <input type="text" id="firstname" name="firstname" placeholder="Enter Your First Name" required><br>
+            <br>
 
-            <label for="birthdate">Birth Date:</label>
-            <input type="date" id="birthdate" name="birthdate" required>
+            <label for="lastname">Last Name: </label>
+            <input type="text" id="lastname" name="lastname" placeholder="Enter Your last Name" required><br>
+            <br>
 
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required>
+            <label for="birth-date">Date of Birth: </label>
+            <input type="date" id="birth-date" name="birth-date" required><br>
+            <br>
 
-            <button type="submit">Sign Up</button>
-        </form>
-    </div>
+            <label for="gender">Gender: </label>
+            <input type="radio" name="gender" id="genderM" value="Male">
+            <label for="genderM">Male</label>
+            <input type="radio" name="gender" id="genderF" value="Femail">
+            <label for="genderF">Femail</label><br>
+            <br>
+            
+            <label for="mobile">Phone Number: </label>
+            <input type="number" id="mobile" name="mobile" placeholder="Enter Your Mobile Number" required><br>
+            <br>
+
+            <label for="email">Email: </label>
+            <input type="email" id="email" name="email" placeholder="Enter Your Email" required><br>
+            <br>
+
+            <label for="pass">Password: </label>
+            <input type="password" id="pass" name="pass" placeholder="Strong Password" required><br>
+            <br>
+
+            <label for="conpass">Confirm Password: </label>
+            <input type="password" id="conpass" name="conpass" placeholder="Confirm Your Password" required><br>
+            <br>
+            <input type="submit" value="Sign up" id="button">
+
+        </fieldset>
+    </form>
+    <script src="validation.js"></script>
 </body>
 </html>
